@@ -1,0 +1,41 @@
+{
+  "name": "quiditch",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A magical multiplayer Quidditch game built with Next.js and Supabase",
+  "author": "Quidditch Academy Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0"
+  },
+  "scripts": {
+    "validate-env": "node scripts/validate-env.js",
+    "optimize-images": "node scripts/optimize-images.js",
+    "analyze-bundle": "node scripts/analyze-bundle.js",
+    "dev": "npm run validate-env && next dev",
+    "build": "npm run validate-env && next build",
+    "start": "next start",
+    "lint": "eslint",
+    "audit": "npm audit --audit-level=moderate",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.12.4",
+    "@supabase/supabase-js": "^2.112.3",
+    "next": "16.3.2",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "web-vitals": "^6.2.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.3.2",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
